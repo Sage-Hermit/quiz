@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>My Quiz APP</title>
+    <link rel="stylesheet" href="mumugame.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div class="question-number">
+            <h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+        </div>
+        <div class="question">
+        
+        </div>
+        <div class="options">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+            <div id="3" class="option4" onclick="check(this)"></div>
+        </div>
+        <div class="button">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <center><div class="answers-tracker"></div></center>
+    </div>
+    
+    <div class="quiz-over">
+        <div class="box">
+            <h1>
+            You have finished the quiz! <br> 
+            You got <span class="correct-answers"></span> out of <span class="total-question2"></span> <br>
+            That's <span class="percentage"></span>
+            </h1>
+            <button type="button" onclick="tryAgain()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="mumugame.js"></script>
+</body>
+
+</html>
